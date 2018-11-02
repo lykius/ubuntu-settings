@@ -1,0 +1,8 @@
+#!/bin/bash
+# This hook is sourced after every virtualenv is activated.
+
+if [ ${_OLD_VIRTUAL_PS1:0:2} == "\n" ]
+    then
+        export PS1="\n(`basename $VIRTUAL_ENV`) ${_OLD_VIRTUAL_PS1:2}"
+fi
+
