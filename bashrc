@@ -22,10 +22,9 @@ alias ll='ls -Al'
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev
-source /home/lykius/.local/bin/virtualenvwrapper.sh
+source $HOME/.local/bin/virtualenvwrapper.sh
 
 alias python='python3'
 alias py='python3'
 alias pip='pip3'
 alias mkpj='mkproject -p $(which python3)'
-
