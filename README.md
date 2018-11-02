@@ -1,7 +1,7 @@
 # Ubuntu settings
 
 ## Bash
-Background color: RGB(60,50,50) #3c3232
+Background color: `RGB(60,50,50)` (or in hex `#3c3232`)  
 Font: Ubuntu Mono Regular
 
 ## Virtualenvwrapper
