@@ -28,6 +28,7 @@ set backspace=indent,eol,start
 set autoindent
 set nostartofline
 set ruler
+set colorcolumn=100
 set laststatus=2
 set confirm
 set visualbell
