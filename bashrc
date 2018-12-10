@@ -1,8 +1,5 @@
 # If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+[ -z "$PS1" ] && return
 
 HISTCONTROL=ignoreboth
 shopt -s histappend
@@ -26,5 +23,6 @@ alias python='python3'
 alias py='python3'
 alias pip='pip3'
 # alias mkpj='mkproject -p $(which python3)'
+# alias cdpj='cdproject'
 
 alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
