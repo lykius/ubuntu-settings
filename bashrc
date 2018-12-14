@@ -24,5 +24,6 @@ alias py='python3'
 alias pip='pip3'
 # alias mkpj='mkproject -p $(which python3)'
 # alias cdpj='cdproject'
+# alias deact='deactivate'
 
 alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
