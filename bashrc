@@ -21,6 +21,7 @@ alias ll='ls -Al'
 
 alias python='python3'
 alias py='python3'
+alias pyt='py -m pytest -v'
 alias pip='pip3'
 # alias mkpj='mkproject -p $(which python3)'
 # alias cdpj='cdproject'
