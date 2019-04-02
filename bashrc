@@ -19,12 +19,19 @@ alias ll='ls -Al'
 # export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 # source $(which virtualenvwrapper.sh)
 
+export UTILITY_HOME=$HOME/dev/utility
+
 alias python='python3'
 alias py='python3'
 alias pyt='py -m pytest -v'
+alias pyc='pycodestyle'
 alias pip='pip3'
 # alias mkpj='mkproject -p $(which python3)'
+# mkpjs() { mkpj "$1" ; py $UTILITY_HOME/create_sublime_project.py $(pwd) $(which python) ; }
 # alias cdpj='cdproject'
 # alias deact='deactivate'
 
 alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
+alias idea='/opt/intellij-idea/bin/idea.sh'
+raspifs() { sshfs pi@"$1":/home/pi/dev /home/lykius/dev/raspberry ; }
+sublpj() { subl --project "$1.sublime-project" ; }
