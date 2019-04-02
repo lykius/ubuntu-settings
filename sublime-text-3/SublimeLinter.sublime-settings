@@ -1,0 +1,8 @@
+{
+    "paths":
+    {
+        "linux": ["~/.local/bin"],
+        "osx": [],
+        "windows": []
+    }
+}
