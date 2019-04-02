@@ -12,3 +12,9 @@ Open `vim` and run `:PluginInstall` to install plugins.
 ## Virtualenvwrapper
 Install with `sudo pip3 install virtualenvwrapper` and uncomment related lines in `.bashrc` file.  
 Replace `~/.virtualenvs/postactivate` file with the one from this repository.
+
+## Sublime Text 3
+Install following instructions here: https://www.sublimetext.com/docs/3/linux_repositories.html.  
+Install "Package Control".  
+Install plugins: Anaconda, SublimeLinter, SublimeLinter-flake8 (requires flake8, install with `pip3 install flake8`).  
+Copy settings files from this repository in `~/.config/sublime-text-3/Packages/User`.
