@@ -9,10 +9,11 @@ import os
 import sys
 
 HOME = os.path.expanduser('~')
+TEMPLATES_PATH = HOME + '/templates/sublime-text-3/'
 PROJECT_EXT = '.sublime-project'
 WORKSPACE_EXT = '.sublime-workspace'
-PROJECT_TEMPLATE = HOME + '/.templates/template' + PROJECT_EXT
-WORKSPACE_TEMPLATE = HOME + '/.templates/template' + WORKSPACE_EXT
+PROJECT_TEMPLATE = TEMPLATES_PATH + 'template' + PROJECT_EXT
+WORKSPACE_TEMPLATE = TEMPLATES_PATH + 'template' + WORKSPACE_EXT
 
 if len(sys.argv) != 3:
     print('Usage: python create_sublime_project.py dir interpreter')
