@@ -1,8 +1,8 @@
 # Ubuntu settings
 
 ## Bash
-Background color: `RGB(60,50,50)` (or in hex `#3c3232`)  
-Font: Ubuntu Mono Regular
+Background color: `RGB(60,50,50)` (or in hex `#3c3232`).  
+Font: Ubuntu Mono Regular.
 
 ## gnome-tweak-tool
 Run `sudo apt install gnome-tweak-tool`.
