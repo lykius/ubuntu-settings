@@ -5,7 +5,12 @@ Background color: `RGB(60,50,50)` (or in hex `#3c3232`)
 Font: Ubuntu Mono Regular
 
 ## KeePass 2
-Run `sudo add-apt-repository ppa:jtaylor/keepass  sudo apt update  sudo apt install keepass2`.
+Run
+```
+sudo add-apt-repository ppa:jtaylor/keepass  
+sudo apt update  
+sudo apt install keepass2
+```
 
 ## Vim
 Run `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`.  
