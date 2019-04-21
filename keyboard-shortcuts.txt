@@ -1,0 +1,22 @@
+## Launchers
+Home Folder → Super+F
+Launch Terminal → Super+T
+Launch web browser → Super+W
+
+## Navigation
+Move to workspace above → Ctrl+Alt+Up
+Move to workspace below → Ctrl+Alt+Down
+Move window one workspace down → Alt+Super+Down
+Move window one workspace up → Alt+Super+Up
+Switch windows → Alt+Tab
+
+## Sound and Media
+Volume down → “Volume down”
+Volume up → “Volume up”
+Volume mute → “Mute”
+
+## System
+Lock screen → Super+L
+
+## Windows
+Close windows → Ctrl+Q
