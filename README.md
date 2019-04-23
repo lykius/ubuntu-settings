@@ -1,14 +1,19 @@
 # Ubuntu settings
 
+## KeePass 2
+Run `sudo apt install keepass2`.
+
 ## Bash
 Background color: `RGB(60,50,50)` (or in hex `#3c3232`).  
 Font: Ubuntu Mono Regular.
 
 ## gnome-tweak-tool
-Run `sudo apt install gnome-tweak-tool`.
+Run `sudo apt install gnome-tweak-tool`.  
+It's needed to define workspaces, to enable the option "Windows -> Center New Windows" and to configure Extensions (like gTile).
 
-## KeePass 2
-Run `sudo apt install keepass2`.
+## dconf-editor
+Run `sudo apt install dconf-editor`.  
+To hide the dock, go to "org/gnome/shell/extensions/dash-to-dock" and disable "autohide", "dock-fixed" and "intellihide".
 
 ## Vim
 Run `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`.  
