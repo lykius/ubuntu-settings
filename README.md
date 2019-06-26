@@ -29,3 +29,6 @@ Install following instructions here: https://www.sublimetext.com/docs/3/linux_re
 Install "Package Control".  
 Install plugins: Anaconda, Python Debugger, SublimeLinter, SublimeLinter-flake8 (requires flake8, install with `pip3 install flake8`).  
 Copy settings files from this repository in `~/.config/sublime-text-3/Packages/User`.
+
+# VSCode
+Copy settings files from this repository in `~/.config/Code/User`.
