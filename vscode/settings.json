@@ -1,0 +1,36 @@
+{
+    // general
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Ubuntu Mono",
+    "editor.fontSize": 16,
+    "editor.rulers": [79],
+    "editor.highlightActiveIndentGuide": false,
+    "editor.renderIndentGuides": false,
+    "editor.detectIndentation": false,
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.git": true,
+        "**/__pycache__": true,
+        "**/.mypy_cache": true,
+        ".vscode": true,
+        ".gitignore": true,
+        ".ipynb_checkpoints": true
+    },
+    "files.watcherExclude": {
+        "**/.git": true,
+        "**/__pycache__": true,
+        "**/.mypy_cache": true,
+        "**/.ipynb_checkpoints": true
+    },
+
+    // python
+    "python.terminal.activateEnvironment": false,
+    "python.venvPath": "~/.virtualenvs",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true,
+    "window.zoomLevel": 0,
+}
