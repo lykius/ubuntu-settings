@@ -17,7 +17,7 @@
         "**/.mypy_cache": true,
         ".vscode": true,
         ".gitignore": true,
-        ".ipynb_checkpoints": true
+        "**/.ipynb_checkpoints": true
     },
     "files.watcherExclude": {
         "**/.git": true,
