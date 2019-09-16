@@ -15,15 +15,17 @@
         "**/.git": true,
         "**/__pycache__": true,
         "**/.mypy_cache": true,
-        ".vscode": true,
+        "**/.vscode": true,
         ".gitignore": true,
-        "**/.ipynb_checkpoints": true
+        "**/.ipynb_checkpoints": true,
+        "**/build": true
     },
     "files.watcherExclude": {
         "**/.git": true,
         "**/__pycache__": true,
         "**/.mypy_cache": true,
-        "**/.ipynb_checkpoints": true
+        "**/.ipynb_checkpoints": true,
+        "**/build": true
     },
 
     // python
