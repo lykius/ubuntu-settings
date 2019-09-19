@@ -29,6 +29,7 @@ alias pip='pip3'
 # alias mkpj='mkproject -p $(which python3)'
 # alias cdpj='cdproject'
 # alias deact='deactivate'
+# export PIP_REQUIRE_VIRTUALENV=true
 
 alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
 raspifs() { sshfs pi@"$1":/home/pi/dev /home/lykius/dev/raspberry ; }
