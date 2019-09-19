@@ -1,5 +1,6 @@
 {
     // general
+    "window.zoomLevel": 0,
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -34,5 +35,5 @@
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.mypyEnabled": true,
-    "window.zoomLevel": 0,
+    "python.jediEnabled": false,
 }
