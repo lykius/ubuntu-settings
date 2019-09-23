@@ -19,8 +19,6 @@ alias ll='ls -Al'
 # export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 # source $(which virtualenvwrapper.sh)
 
-export UTILITY_HOME=$HOME/dev/utility
-
 alias python='python3'
 alias py='python3'
 alias pyt='py -m pytest -v'
