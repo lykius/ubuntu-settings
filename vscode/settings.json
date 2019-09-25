@@ -33,6 +33,9 @@
     "python.terminal.activateEnvironment": false,
     "python.venvPath": "~/.virtualenvs",
     "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E402" 
+    ],
     "python.linting.pylintEnabled": false,
     "python.linting.mypyEnabled": true,
     "python.jediEnabled": false,
