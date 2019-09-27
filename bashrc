@@ -38,6 +38,7 @@ alias pip='pip3'
 # alias cdpj='cdproject'
 # alias deact='deactivate'
 # export PIP_REQUIRE_VIRTUALENV=true
+alias jnote='jupyter-notebook'
 
 alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
 raspifs() { sshfs pi@"$1":/home/pi/dev /home/lykius/dev/raspberry ; }
