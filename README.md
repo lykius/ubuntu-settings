@@ -22,7 +22,6 @@ Open `vim` and run `:PluginInstall` to install plugins.
 
 ## Virtualenvwrapper
 Install with `sudo pip3 install virtualenvwrapper` and uncomment related lines in `.bashrc` file.  
-Replace `~/.virtualenvs/postactivate` file with the one from this repository.
 
 ## VSCode
 Copy settings files from this repository in `~/.config/Code/User`.
