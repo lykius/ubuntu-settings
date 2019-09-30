@@ -17,7 +17,17 @@ current_branch() {
     fi
 }
 
-export PS1="\n\[$(tput bold)\]\[\033[38;5;63m\]\[\033[48;5;220m\]\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;135m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\[$(tput sgr0)\]\[\033[38;5;141m\][\u]\[$(tput sgr0)\]\[\033[38;5;15m\] \$(current_branch)\[$(tput sgr0)\]\[\033[38;5;124m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+current_virtual_env() {
+    venv=$(echo $VIRTUAL_ENV | rev | cut -d '/' -f1 | rev)
+    if [ -z $venv ]
+    then
+        echo ''
+    else
+        echo '('$venv') '
+    fi
+}
+
+export PS1="\n\$(current_virtual_env)\[$(tput bold)\]\[\033[38;5;63m\]\[\033[48;5;220m\]\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;135m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\[$(tput sgr0)\]\[\033[38;5;141m\][\u]\[$(tput sgr0)\]\[\033[38;5;15m\] \$(current_branch)\[$(tput sgr0)\]\[\033[38;5;124m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 
 alias ls='ls --color'
 export LS_COLORS='di=1;93:ln=4:ex=92'
@@ -37,7 +47,8 @@ alias pip='pip3'
 # alias mkpj='mkproject -p $(which python3)'
 # alias cdpj='cdproject'
 # alias deact='deactivate'
-# export PIP_REQUIRE_VIRTUALENV=true
+export PIP_REQUIRE_VIRTUALENV=true
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 alias jnote='jupyter-notebook'
 
 alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
