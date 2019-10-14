@@ -27,7 +27,7 @@ current_virtual_env() {
     fi
 }
 
-export PS1="\n\$(current_virtual_env)\[$(tput bold)\]\[\033[38;5;63m\]\[\033[48;5;220m\]\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;135m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\[$(tput sgr0)\]\[\033[38;5;141m\][\u]\[$(tput sgr0)\]\[\033[38;5;15m\] \$(current_branch)\[$(tput sgr0)\]\[\033[38;5;124m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+export PS1="\n\[$(tput sgr0)\]\[\033[38;5;141m\][\u] @\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput bold)\]\[\033[38;5;63m\]\[\033[48;5;220m\]\h\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;141m\]:\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\$(current_virtual_env)\$(current_branch)\[$(tput sgr0)\]\[\033[38;5;124m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 
 alias ls='ls --color'
 export LS_COLORS='di=1;93:ln=4:ex=92'
