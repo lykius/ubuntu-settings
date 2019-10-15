@@ -24,4 +24,5 @@ Open `vim` and run `:PluginInstall` to install plugins.
 Install with `sudo pip3 install virtualenvwrapper` and uncomment related lines in `.bashrc` file.  
 
 ## VSCode
-Copy settings files from this repository in `~/.config/Code/User`.
+Copy settings files from this repository in `~/.config/Code/User`.  
+Follow [these instructions](https://hdd512mb.wordpress.com/2019/03/06/visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-in-linux-os/).
