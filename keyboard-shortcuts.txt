@@ -19,4 +19,5 @@ Volume mute → “Mute”
 Lock screen → Super+L
 
 ## Windows
-Close windows → Ctrl+Q
+Close window → Ctrl+Q
+Hide Windows → Super+Down
