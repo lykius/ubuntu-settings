@@ -7,10 +7,13 @@
     "editor.minimap.enabled": false,
     "editor.fontFamily": "Ubuntu Mono",
     "editor.fontSize": 16,
-    "editor.rulers": [79],
+    "editor.rulers": [
+        88
+    ],
     "editor.highlightActiveIndentGuide": false,
     "editor.renderIndentGuides": false,
     "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
     "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/.git": true,
@@ -29,15 +32,17 @@
         "**/.ipynb_checkpoints": true,
         "**/build": true
     },
-
     // python
     "python.terminal.activateEnvironment": false,
     "python.venvPath": "~/.virtualenvs",
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--ignore=E402" 
+        "--ignore=E402",
+        "--ignore=E501"
     ],
     "python.linting.pylintEnabled": false,
     "python.linting.mypyEnabled": true,
     "python.jediEnabled": false,
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "python.formatting.provider": "black",
 }
