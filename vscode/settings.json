@@ -37,12 +37,10 @@
     "python.venvPath": "~/.virtualenvs",
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--ignore=E402",
-        "--ignore=E501"
+        "--ignore=E402,E501",
     ],
     "python.linting.pylintEnabled": false,
     "python.linting.mypyEnabled": true,
     "python.jediEnabled": false,
-    "python.dataScience.sendSelectionToInteractiveWindow": false,
     "python.formatting.provider": "black",
 }
