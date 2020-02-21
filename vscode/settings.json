@@ -8,7 +8,7 @@
     "editor.fontFamily": "Ubuntu Mono",
     "editor.fontSize": 16,
     "editor.rulers": [
-        88
+        100
     ],
     "editor.highlightActiveIndentGuide": false,
     "editor.renderIndentGuides": false,
@@ -37,10 +37,13 @@
     "python.venvPath": "~/.virtualenvs",
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--ignore=E402,E501",
+        "--ignore=E402,E501,E203",
     ],
     "python.linting.pylintEnabled": false,
-    "python.linting.mypyEnabled": true,
     "python.jediEnabled": false,
+    "python.linting.mypyEnabled": true,
     "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=100"
+    ],
 }
