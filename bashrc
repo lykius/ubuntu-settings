@@ -13,7 +13,7 @@ current_branch() {
     then
         echo ''
     else
-        echo '꜓ '$branch' '
+        echo '├ '$branch' '
     fi
 }
 
