@@ -1,0 +1,6 @@
+#!/bin/bash
+# This hook is sourced after this virtualenv is deactivated.
+
+export LD_LIBRARY_PATH=$ORIGINAL_LD_LIBRARY_PATH
+unset ORIGINAL_LD_LIBRARY_PATH
+
