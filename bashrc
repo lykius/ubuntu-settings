@@ -32,7 +32,7 @@ export PS1="\n\[$(tput sgr0)\]\[\033[38;5;141m\][\u] @\[$(tput sgr0)\]\[\033[38;
 alias ls='ls --color'
 export LS_COLORS='di=1;93:ln=4:ex=92'
 alias la='ls -A'
-alias ll='ls -Al'
+alias ll='ls -Alh'
 
 # export WORKON_HOME=$HOME/.virtualenvs
 # export PROJECT_HOME=$HOME/dev
