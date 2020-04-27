@@ -25,7 +25,7 @@ It's needed to define workspaces, to enable the option "Windows -> Center New Wi
 
 ## dconf-editor
 Run `sudo apt install dconf-editor`.  
-To hide the dock, go to "org/gnome/shell/extensions/dash-to-dock" and disable "autohide", "dock-fixed" and "intellihide".
+To hide the dock, go to `org/gnome/shell/extensions/dash-to-dock` and disable "autohide", "dock-fixed" and "intellihide".
 
 ## Vim
 Run `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`.  
@@ -34,6 +34,8 @@ Open `vim` and run `:PluginInstall` to install plugins.
 
 ## Virtualenvwrapper
 Install with `sudo pip3 install virtualenvwrapper` and uncomment related lines in `.bashrc` file.  
+Edit file `~/.virtualenvs/postmkvirtualenv` accordingly to the file in this repository.  
+If you need to use CUDA in a virtualenv, use `postactivate` and `postdeactivate` scripts similar to the ones in this repository.
 
 ## VSCode
 Copy settings files from this repository in `~/.config/Code/User`.  
