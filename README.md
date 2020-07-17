@@ -40,3 +40,8 @@ If you need to use CUDA in a virtualenv, use `postactivate` and `postdeactivate`
 ## VSCode
 Copy settings files from this repository in `~/.config/Code/User`.  
 Follow [these instructions](https://hdd512mb.wordpress.com/2019/03/06/visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-in-linux-os/).
+
+## NVIDIA Drivers
+Add drivers repository with `sudo add-apt-repository ppa:graphics-drivers/ppa` and `sudo apt update` (sometimes a reboot was required).
+Then run `ubuntu-drivers devices` to get the recommended version (e.g. 450).
+Finally, install with `sudo apt install nvidia-drivers-450` and reboot.
