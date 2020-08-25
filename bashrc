@@ -51,5 +51,16 @@ export PIP_REQUIRE_VIRTUALENV=true
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 alias jnote='jupyter-notebook'
 
-alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
-raspifs() { sshfs pi@"$1":/home/pi/dev /home/lykius/dev/raspberry ; }
+# alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
+# sshfs() { sshfs USER@HOST:/remote/path /local/path ; }
+# alias nsmi='watch nvidia-smi'
+# cuda() { export CUDA_VISIBLE_DEVICES="$1" ; }
+# alias tboard='tensorboard --logdir . --host 137.204.59.222'
+# alias tmuxn='tmux new -s'
+# alias tmuxa='tmux a -t'
+# alias chm='sudo chmod -R ugo-x,u+rwX,go+rX,go-w'
+# alias docker_killall='docker stop `docker ps -a -q` && docker rm `docker ps -a -q`'
+# alias docker_rmall='docker rmi `docker image ls -q`'
+# alias img2vid='ffmpeg -framerate 10 -start_number 0 -i images/%06d.png -c:v libx264 video.mp4'
+# alias genpalette='ffmpeg -i video.mp4 -vf "fps=10,palettegen" palette.png'
+# alias vid2gif='ffmpeg -i video.mp4 -i palette.png -filter_complex "fps=10,paletteuse" scene.gif'
