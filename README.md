@@ -44,4 +44,4 @@ Follow [these instructions](https://hdd512mb.wordpress.com/2019/03/06/visual-stu
 ## NVIDIA Drivers
 Add drivers repository with `sudo add-apt-repository ppa:graphics-drivers/ppa` and `sudo apt update` (sometimes a reboot was required).  
 Then run `ubuntu-drivers devices` to get the recommended version (e.g. 450).  
-Finally, install with `sudo apt install nvidia-drivers-450` and reboot.
+Finally, install with `sudo apt install nvidia-driver-450` and reboot.
