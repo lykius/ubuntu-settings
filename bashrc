@@ -7,27 +7,18 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 shopt -s checkwinsize
 
-current_branch() {
-    branch=$(git branch 2> /dev/null | grep \* | cut -d ' ' -f2)
-    if [ -z $branch ]
-    then
-        echo ''
-    else
-        echo '├ '$branch' '
-    fi
-}
-
-current_virtual_env() {
+current_venv_and_branch() {
     venv=$(echo $VIRTUAL_ENV | rev | cut -d '/' -f1 | rev)
-    if [ -z $venv ]
+    branch=$(git branch 2> /dev/null | grep \* | cut -d ' ' -f2)
+    if [ -z $venv ] && [ -z $branch ]
     then
         echo ''
     else
-        echo '('$venv') '
+        echo '('$venv':'$branch') '
     fi
 }
 
-export PS1="\n\[\033[38;5;141m\]\u\[$(tput sgr0)\]@\[\033[38;5;141m\]\h\[$(tput sgr0)\]:\[\033[38;5;141m\]\w\[$(tput sgr0)\]\n\$(current_virtual_env)\$(current_branch)\[$(tput sgr0)\]\[\033[38;5;124m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+export PS1="\n\[\033[38;5;141m\]\u@\h\[$(tput sgr0)\]:\[\033[38;5;6m\]\w\[$(tput sgr0)\]\n\$(current_venv_and_branch)\[\033[38;5;124m\]\\$\[$(tput sgr0)\] "
 
 alias ls='ls --color'
 export LS_COLORS='di=1;93:ln=4:ex=92'
