@@ -6,6 +6,7 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 shopt -s checkwinsize
+stty -ixon
 
 current_venv_and_branch() {
     venv=$(echo $VIRTUAL_ENV | rev | cut -d '/' -f1 | rev)
