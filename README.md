@@ -16,7 +16,7 @@ The UUID of the partition can be obtained with the command `lsblk -f`.
 Run `sudo apt install keepass2`.
 
 ## gTile
-gTile can be installed using a browser from [this link](https://extensions.gnome.org/).
+gTile can be installed using a browser from [gnome extensions](https://extensions.gnome.org/).  
 Follow instructions there to install the necessary plugin and proxy app.
 
 ## gnome-tweak-tool
