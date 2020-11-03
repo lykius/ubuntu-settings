@@ -7,10 +7,13 @@ Font: Ubuntu Mono Regular.
 ## /etc/fstab
 To mount properly a NTFS partition, add the following line to `/etc/fstab`:
 ```
-# <file system> <mount point>  <type>  <options>                                                          <dump>  <pass>
-UUID=XXXXXXXXXX path/to/mntdir ntfs    defaults,auto,utf8,umask=000,dmask=022,fmask=133,uid=1000,gid=1000 0       0
+UUID=XXXXXXXXXX /PATH/TO/MNTDIR ntfs defaults,auto,utf8,umask=000,dmask=022,fmask=133,uid=1000,gid=1000 0 0
 ```
-The UUID of the partition can be obtained with the command `lsblk -f`.
+Generally, the line to mount a partition is:
+```
+UUID=XXXXXXXXXX /PATH/TO/MNTDIR FILE_SYSTEM defaults 0 2
+```
+The UUID of the partition can be obtained with the command `sudo blkid`.
 
 ## KeePass 2
 Run `sudo apt install keepass2`.
@@ -41,7 +44,17 @@ If you need to use CUDA in a virtualenv, use `postactivate` and `postdeactivate`
 Copy settings files from this repository in `~/.config/Code/User`.  
 Follow [these instructions](https://hdd512mb.wordpress.com/2019/03/06/visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-in-linux-os/).
 
-## NVIDIA Drivers
+## NVIDIA Drivers and CUDA
 Add drivers repository with `sudo add-apt-repository ppa:graphics-drivers/ppa` and `sudo apt update` (sometimes a reboot was required).  
 Then run `ubuntu-drivers devices` to get the recommended version (e.g. 450).  
-Finally, install with `sudo apt install nvidia-driver-450` and reboot.
+Finally, install with `sudo apt install nvidia-driver-450` and reboot.  
+Download CUDA run file from [here](https://developer.nvidia.com/cuda-toolkit-archive). Do not install drivers during the setup.
+Download cuDNN tar file from [here](https://developer.nvidia.com/cudnn) and follow instructions [here](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-tar).
+
+## SSH setup
+Install ssh with `sudo apt install openssh-server`.  
+To connect without passwor, follow these steps:
+```
+1. ssh-keygen
+2. ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote-host
+```
