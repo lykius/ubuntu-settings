@@ -5,22 +5,22 @@ Background color: `RGB(60,50,50)` (or in hex `#3c3232`).
 Font: Ubuntu Mono Regular.
 
 ## /etc/fstab
-To mount properly a NTFS partition, add the following line to `/etc/fstab`:
-```
-UUID=XXXXXXXXXX /PATH/TO/MNTDIR ntfs defaults,auto,utf8,umask=000,dmask=022,fmask=133,uid=1000,gid=1000 0 0
-```
-Generally, the line to mount a partition is:
+Generally, add the following line to `/etc/fstab` to mount automatically a partition:
 ```
 UUID=XXXXXXXXXX /PATH/TO/MNTDIR FILE_SYSTEM defaults 0 2
 ```
-The UUID of the partition can be obtained with the command `sudo blkid`.
+To mount properly a NTFS partition, use the following line:
+```
+UUID=XXXXXXXXXX /PATH/TO/MNTDIR ntfs defaults,auto,utf8,umask=000,dmask=022,fmask=133,uid=1000,gid=1000 0 0
+```
+The UUID of a partition can be obtained with the command `sudo blkid`.
 
 ## KeePass 2
 Run `sudo apt install keepass2`.
 
 ## gTile
-gTile can be installed using a browser from [gnome extensions](https://extensions.gnome.org/).  
-Follow instructions there to install the necessary plugin and proxy app.
+gTile can be installed using a browser from [gnome extensions](https://extensions.gnome.org/), follow instructions there to setup gnome extensions.  
+After installing gTile, download the file `gtile.txt` from this repository and run `dconf load /org/gnome/shell/extensions/gtile/ < gtile.txt`.
 
 ## gnome-tweak-tool
 Run `sudo apt install gnome-tweak-tool`.  
