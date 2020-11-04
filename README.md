@@ -45,11 +45,15 @@ Copy settings files from this repository in `~/.config/Code/User`.
 Follow [these instructions](https://hdd512mb.wordpress.com/2019/03/06/visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-in-linux-os/).
 
 ## NVIDIA Drivers and CUDA
+### Drivers
 Add drivers repository with `sudo add-apt-repository ppa:graphics-drivers/ppa` and `sudo apt update` (sometimes a reboot was required).  
 Then run `ubuntu-drivers devices` to get the recommended version (e.g. 450).  
-Finally, install with `sudo apt install nvidia-driver-450` and reboot.  
+Finally, install with `sudo apt install nvidia-driver-450` and reboot.
+### CUDA and cuDNN
 Download CUDA run file from [here](https://developer.nvidia.com/cuda-toolkit-archive). Do not install drivers during the setup.  
 Download cuDNN tar file from [here](https://developer.nvidia.com/cudnn) and follow instructions [here](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-tar).
+### Use intel graphics for display and GPUS only for CUDA
+Use the modified version of `prime-select` from [here](https://github.com/lperez31/prime-select-hybrid).
 
 ## SSH setup
 Install ssh with `sudo apt install openssh-server`.  
