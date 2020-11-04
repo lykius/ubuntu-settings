@@ -56,3 +56,4 @@ alias jnote='jupyter-notebook'
 # alias img2vid='ffmpeg -framerate 10 -start_number 0 -i images/%06d.png -c:v libx264 video.mp4'
 # alias genpalette='ffmpeg -i video.mp4 -vf "fps=10,palettegen" palette.png'
 # alias vid2gif='ffmpeg -i video.mp4 -i palette.png -filter_complex "fps=10,paletteuse" scene.gif'
+# cheat() { curl cheat.sh/$1 ; }
