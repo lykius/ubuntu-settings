@@ -48,12 +48,12 @@ Follow [these instructions](https://hdd512mb.wordpress.com/2019/03/06/visual-stu
 Add drivers repository with `sudo add-apt-repository ppa:graphics-drivers/ppa` and `sudo apt update` (sometimes a reboot was required).  
 Then run `ubuntu-drivers devices` to get the recommended version (e.g. 450).  
 Finally, install with `sudo apt install nvidia-driver-450` and reboot.  
-Download CUDA run file from [here](https://developer.nvidia.com/cuda-toolkit-archive). Do not install drivers during the setup.
+Download CUDA run file from [here](https://developer.nvidia.com/cuda-toolkit-archive). Do not install drivers during the setup.  
 Download cuDNN tar file from [here](https://developer.nvidia.com/cudnn) and follow instructions [here](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-tar).
 
 ## SSH setup
 Install ssh with `sudo apt install openssh-server`.  
-To connect without passwor, follow these steps:
+To connect without password, follow these steps:
 ```
 1. ssh-keygen
 2. ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote-host
