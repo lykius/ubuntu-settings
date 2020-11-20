@@ -1,7 +1,8 @@
 {
     // general
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.list.openMode": "doubleClick",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "editor.minimap.enabled": false,
@@ -14,36 +15,50 @@
     "editor.renderIndentGuides": false,
     "editor.detectIndentation": false,
     "editor.formatOnSave": true,
+    "editor.suggestSelection": "first",
     "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/.git": true,
+        "**/.venv": true,
         "**/__pycache__": true,
         "**/.mypy_cache": true,
         "**/.vscode": true,
         ".gitignore": true,
         ".gitattributes": true,
         "**/.ipynb_checkpoints": true,
-        "**/build": true
+        "**/build": true,
+        "poetry.lock": true
     },
     "files.watcherExclude": {
         "**/.git": true,
+        "**/.venv": true,
         "**/__pycache__": true,
         "**/.mypy_cache": true,
         "**/.ipynb_checkpoints": true,
-        "**/build": true
+        "**/build": true,
+        "poetry.lock": true
     },
+    "git.confirmSync": false,
     // python
+    "python.showStartPage": false,
     "python.terminal.activateEnvironment": false,
-    "python.venvPath": "~/.virtualenvs",
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
-        "--ignore=E402,E501,E203",
-    ],
+    "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": false,
-    "python.jediEnabled": false,
-    "python.linting.mypyEnabled": true,
+    "python.linting.mypyEnabled": false,
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "--line-length=100"
     ],
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "remote.SSH.remotePlatform": {
+        "alterego": "linux",
+        "persefone": "linux",
+        "cratos": "linux"
+    },
+    "autoDocstring.docstringFormat": "numpy",
+    "autoDocstring.startOnNewLine": true,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.interactiveWindowMode": "perFile",
 }
