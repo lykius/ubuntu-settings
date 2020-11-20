@@ -35,6 +35,14 @@ Run `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.
 Copy `.vimrc` file from this repository in `~`.  
 Open `vim` and run `:PluginInstall` to install plugins.
 
+## pyenv
+Follow instructions [here](https://github.com/pyenv/pyenv#basic-github-checkout) and [here](https://github.com/pyenv/pyenv/wiki/common-build-problems).
+
+## poetry
+Follow instructions [here](https://python-poetry.org/docs/#installation).  
+You need to logout and then login to add poetry to the PATH.  
+After that, run `poetry config virtualenvs.in-project true`.
+
 ## Virtualenvwrapper
 Install with `sudo pip3 install virtualenvwrapper` and uncomment related lines in `.bashrc` file.  
 Edit file `~/.virtualenvs/postmkvirtualenv` accordingly to the file in this repository.  
