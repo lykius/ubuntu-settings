@@ -9,7 +9,7 @@ shopt -s checkwinsize
 stty -ixon
 
 current_venv_and_branch() {
-    venv=$(echo $VIRTUAL_ENV | rev | cut -d '/' -f1 | rev)
+    venv=$(echo $VIRTUAL_ENV | rev | cut -d '/' -f2 | rev)
     branch=$(git branch 2> /dev/null | grep \* | cut -d ' ' -f2)
     if [ -z $venv ] && [ -z $branch ]
     then
@@ -26,23 +26,21 @@ export LS_COLORS='di=1;93:ln=4:ex=92'
 alias la='ls -A'
 alias ll='ls -Alh'
 
-# export WORKON_HOME=$HOME/.virtualenvs
-# export PROJECT_HOME=$HOME/dev
-# export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-# source $(which virtualenvwrapper.sh)
-
 alias python='python3'
 alias py='python3'
 alias pyt='py -m pytest -v'
-alias pyc='pycodestyle'
 alias pip='pip3'
-# alias mkpj='mkproject -p $(which python3)'
-# alias cdpj='cdproject'
-# alias deact='deactivate'
+
 export PIP_REQUIRE_VIRTUALENV=true
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-alias jnote='jupyter-notebook'
+workon(){
+    source ~/dev/$1/.venv/bin/activate
+    cd ~/dev/$1
+}
+alias deact='deactivate'
+alias cdpj='cd $(which python | cut -d. -f1)'
 
+# alias jnote='jupyter-notebook'
 # alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
 # sshfs() { sshfs USER@HOST:/remote/path /local/path ; }
 # alias nsmi='watch nvidia-smi'
