@@ -43,11 +43,6 @@ Follow instructions [here](https://python-poetry.org/docs/#installation).
 You need to logout and then login to add poetry to the PATH.  
 After that, run `poetry config virtualenvs.in-project true`.
 
-## Virtualenvwrapper
-Install with `sudo pip3 install virtualenvwrapper` and uncomment related lines in `.bashrc` file.  
-Edit file `~/.virtualenvs/postmkvirtualenv` accordingly to the file in this repository.  
-If you need to use CUDA in a virtualenv, use `postactivate` and `postdeactivate` scripts similar to the ones in this repository.
-
 ## VSCode
 Copy settings files from this repository in `~/.config/Code/User`.  
 Follow [these instructions](https://hdd512mb.wordpress.com/2019/03/06/visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-in-linux-os/).
