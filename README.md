@@ -1,8 +1,11 @@
 # Ubuntu settings
 
 ## Terminal
-Background color: `RGB(60,50,50)` (or in hex `#3c3232`). Font: Ubuntu Mono Regular. Palette: Tango.  
-Preferred terminal emulator: sakura. If you install an alternative terminal emulator, set it as system default terminal application with the command `sudo update-alternatives --config x-terminal-emulator`.
+Background color: `RGB(60,50,50)` (or in hex `#3c3232`).  
+Font: Ubuntu Mono Regular.  
+Color palette: Tango.  
+Preferred terminal emulator: sakura.  
+Set the default terminal application with the command `sudo update-alternatives --config x-terminal-emulator`.
 
 ## /etc/fstab
 Generally, add the following line to `/etc/fstab` to mount automatically a partition:
