@@ -39,7 +39,7 @@ Copy `.vimrc` file from this repository in `~`.
 Open `vim` and run `:PluginInstall` to install plugins.
 
 ## pyenv
-Follow instructions [here](https://github.com/pyenv/pyenv#basic-github-checkout) and [here](https://github.com/pyenv/pyenv/wiki/common-build-problems).
+Follow instructions [here](https://github.com/pyenv/pyenv#basic-github-checkout) and [here](https://github.com/pyenv/pyenv/wiki#suggested-build-environment).
 
 ## poetry
 Follow instructions [here](https://python-poetry.org/docs/#installation).  
