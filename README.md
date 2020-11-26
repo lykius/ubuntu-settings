@@ -5,6 +5,7 @@ Install from software center and run:
 ```
 mkdir -p ~/.local/share/konsole && cd ~/.local/share/konsole
 wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/lykius.profile
+wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/lykius.colorscheme
 cd ~/.config
 wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/konsolerc
 ```
