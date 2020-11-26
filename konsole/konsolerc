@@ -1,0 +1,17 @@
+[Desktop Entry]
+DefaultProfile=lykius.profile
+
+[Favorite Profiles]
+Favorites=lykius.profile
+
+[KonsoleWindow]
+SaveGeometryOnExit=false
+ShowMenuBarByDefault=false
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAAyIAAAHiAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+
+[TabBar]
+TabBarVisibility=AlwaysHideTabBar
