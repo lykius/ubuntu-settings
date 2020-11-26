@@ -1,9 +1,13 @@
 # Ubuntu settings
 
-## Terminal
-Background color: `RGB(60,50,50)` (or in hex `#3c3232`).  
-Font: Ubuntu Mono Regular.  
-Preferred terminal emulator: konsole. Copy `lykius.profile` in `~/.local/share/konsole/` and `konsolerc` in `~/.config/`.  
+## konsole
+Install from software center.  
+Run:
+```
+mkdir -p ~/.local/share/konsole
+wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/lykius.profile ~/.local/share/konsole
+wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/konsolerc ~/.config
+```
 Set the default terminal application with the command `sudo update-alternatives --config x-terminal-emulator`.
 
 ## /etc/fstab
