@@ -5,12 +5,13 @@ DefaultProfile=lykius.profile
 Favorites=lykius.profile
 
 [KonsoleWindow]
+RemoveWindowTitleBarAndFrame=true
 SaveGeometryOnExit=false
 ShowMenuBarByDefault=false
 
 [MainWindow]
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAAyIAAAHiAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAAAu4AAAJIAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 
 [TabBar]
