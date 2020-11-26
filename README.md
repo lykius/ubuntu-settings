@@ -4,9 +4,10 @@
 Install from software center.  
 Run:
 ```
-mkdir -p ~/.local/share/konsole
-wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/lykius.profile ~/.local/share/konsole
-wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/konsolerc ~/.config
+mkdir -p ~/.local/share/konsole && cd ~/.local/share/konsole
+wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/lykius.profile
+cd ~/.config
+wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/konsolerc
 ```
 Set the default terminal application with the command `sudo update-alternatives --config x-terminal-emulator`.
 
