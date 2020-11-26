@@ -8,7 +8,7 @@ wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/lyk
 cd ~/.config
 wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/konsolerc
 ```
-Colors schema `edna` has to be downloaded from settings.  
+Transparency: 10%.  
 Set the default terminal application with the command `sudo update-alternatives --config x-terminal-emulator`.
 
 ## /etc/fstab
