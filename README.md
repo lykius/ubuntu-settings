@@ -26,7 +26,12 @@ Run `sudo apt install keepass2`.
 
 ## gTile
 gTile can be installed using a browser from [gnome extensions](https://extensions.gnome.org/), follow instructions there to setup gnome extensions.  
-After installing gTile, download the file `gtile.txt` from this repository and run `dconf load /org/gnome/shell/extensions/gtile/ < gtile.txt`.
+After installing gTile run:
+```
+cd ~/Downloads
+wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/gtile.txt
+dconf load /org/gnome/shell/extensions/gtile/ < gtile.txt
+```
 
 ## gnome-tweak-tool
 Run `sudo apt install gnome-tweak-tool`.  
