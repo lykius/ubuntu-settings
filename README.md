@@ -8,8 +8,7 @@ wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/lyk
 wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/lykius.colorscheme
 cd ~/.config
 wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/konsolerc
-```
-Transparency: 10%.  
+``` 
 Set the default terminal application with the command `sudo update-alternatives --config x-terminal-emulator`.
 
 ## /etc/fstab
