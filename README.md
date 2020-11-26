@@ -3,8 +3,7 @@
 ## Terminal
 Background color: `RGB(60,50,50)` (or in hex `#3c3232`).  
 Font: Ubuntu Mono Regular.  
-Color palette: Tango.  
-Preferred terminal emulator: sakura.  
+Preferred terminal emulator: konsole.  
 Set the default terminal application with the command `sudo update-alternatives --config x-terminal-emulator`.
 
 ## /etc/fstab
