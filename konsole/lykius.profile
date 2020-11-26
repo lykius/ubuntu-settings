@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=DarkPastels
+ColorScheme=lykius
 Font=Ubuntu Mono,14,-1,5,50,0,0,0,0,0
 
 [General]
