@@ -55,10 +55,6 @@ Follow instructions [here](https://python-poetry.org/docs/#installation).
 You need to logout and then login to add poetry to the PATH.  
 After that, run `poetry config virtualenvs.in-project true`.
 
-## VSCode
-Copy settings files from this repository in `~/.config/Code/User`.  
-Follow [these instructions](https://hdd512mb.wordpress.com/2019/03/06/visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-in-linux-os/).
-
 ## NVIDIA Drivers and CUDA
 ### Drivers
 Add drivers repository with `sudo add-apt-repository ppa:graphics-drivers/ppa` and `sudo apt update` (sometimes a reboot was required).  
