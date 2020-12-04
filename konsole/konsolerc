@@ -5,7 +5,6 @@ DefaultProfile=lykius.profile
 Favorites=lykius.profile
 
 [KonsoleWindow]
-RemoveWindowTitleBarAndFrame=true
 SaveGeometryOnExit=false
 ShowMenuBarByDefault=false
 
