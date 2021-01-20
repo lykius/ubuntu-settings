@@ -16,32 +16,41 @@
     "editor.detectIndentation": false,
     "editor.formatOnSave": true,
     "editor.suggestSelection": "first",
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "off",
     "files.exclude": {
+        "**/.vscode": true,
         "**/.git": true,
         "**/.venv": true,
         "**/__pycache__": true,
+        "**/.ipynb_checkpoints": true,
+        "**/.pytest_cache": true,
         "**/.mypy_cache": true,
-        "**/.vscode": true,
+        "**/build": true,
         ".gitignore": true,
         ".gitattributes": true,
-        "**/.ipynb_checkpoints": true,
-        "**/build": true,
         "poetry.lock": true
     },
     "files.watcherExclude": {
+        "**/.vscode": true,
         "**/.git": true,
         "**/.venv": true,
         "**/__pycache__": true,
-        "**/.mypy_cache": true,
         "**/.ipynb_checkpoints": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
         "**/build": true,
+        ".gitignore": true,
+        ".gitattributes": true,
         "poetry.lock": true
     },
     "git.confirmSync": false,
     // python
     "python.showStartPage": false,
     "python.terminal.activateEnvironment": false,
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.pytestEnabled": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
     "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": false,
     "python.linting.mypyEnabled": false,
@@ -49,15 +58,13 @@
     "python.formatting.blackArgs": [
         "--line-length=100"
     ],
-    "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "basic",
-    "remote.SSH.remotePlatform": {
-        "alterego": "linux",
-        "persefone": "linux",
-        "cratos": "linux"
+    "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
     },
-    "autoDocstring.docstringFormat": "numpy",
-    "autoDocstring.startOnNewLine": true,
+    "autoDocstring.guessTypes": false,
     "jupyter.askForKernelRestart": false,
     "jupyter.sendSelectionToInteractiveWindow": true,
     "jupyter.interactiveWindowMode": "perFile",
