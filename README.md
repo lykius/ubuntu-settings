@@ -36,7 +36,7 @@ dconf load /org/gnome/shell/extensions/gtile/ < gtile.txt
 
 ## gnome-tweak-tool
 Run `sudo apt install gnome-tweak-tool`.  
-It's needed to define workspaces, to enable the option "Windows -> Center New Windows" and to configure Extensions (like gTile).
+It's needed to define workspaces, to remove desktop icons, to enable the option "Windows -> Center New Windows" and to configure Extensions (like gTile).
 
 ## dconf-editor
 Run `sudo apt install dconf-editor`.  
