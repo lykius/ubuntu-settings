@@ -63,10 +63,10 @@ Finally, install with `sudo apt install nvidia-driver-450` and reboot.
 ### CUDA and cuDNN
 Download CUDA run file from [here](https://developer.nvidia.com/cuda-toolkit-archive). Do not install drivers during the setup.  
 Download cuDNN tar file from [here](https://developer.nvidia.com/cudnn) and follow instructions [here](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-tar).  
-CUDA must be added to PATH and LD_LIBRARY_PATH with the commands:
+CUDA must be added to `PATH` and `LD_LIBRARY_PATH` with the commands:
 ```
 export PATH=/usr/local/cuda-XX.X/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-XX.X/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}  # change lib64 with lib on 32-bit OS
+export LD_LIBRARY_PATH=/usr/local/cuda-XX.X/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}  # change lib64 with lib on 32-bit OS
 ```
 ### Use intel graphics for display and GPUS only for CUDA
 Use the modified version of `prime-select` from [here](https://github.com/lperez31/prime-select-hybrid).
