@@ -10,6 +10,9 @@ Move window one workspace down → Alt+Super+Down
 Move window one workspace up → Alt+Super+Up
 Switch windows → Alt+Tab
 
+## Screenshots
+Take a screenshot interactively → Super+S
+
 ## Sound and Media
 Volume down → “Volume down”
 Volume up → “Volume up”
