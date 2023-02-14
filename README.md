@@ -34,10 +34,6 @@ wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/gtile.txt
 dconf load /org/gnome/shell/extensions/gtile/ < gtile.txt
 ```
 
-## gnome-tweak-tool
-Run `sudo apt install gnome-tweak-tool`.  
-It's needed to define workspaces, to remove desktop icons, to enable the option "Windows -> Center New Windows" and to configure Extensions (like gTile).
-
 ## dconf-editor
 Run `sudo apt install dconf-editor`.  
 To hide the dock, go to `org/gnome/shell/extensions/dash-to-dock` and disable "autohide", "dock-fixed" and "intellihide".
@@ -75,6 +71,6 @@ Use the modified version of `prime-select` from [here](https://github.com/lperez
 Install ssh with `sudo apt install openssh-server`.  
 To connect without password, follow these steps:
 ```
-1. ssh-keygen
-2. ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote-host
+1. ssh-keygen -t ed25519
+2. ssh-copy-id -i ~/.ssh/id_ed25519.pub user@remote-host
 ```
