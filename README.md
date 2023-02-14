@@ -22,9 +22,6 @@ UUID=XXXXXXXXXX /PATH/TO/MNTDIR ntfs defaults,auto,utf8,umask=000,dmask=022,fmas
 ```
 The UUID of a partition can be obtained with the command `sudo blkid`.
 
-## KeePass 2
-Run `sudo apt install keepass2`.
-
 ## gTile
 gTile can be installed using a browser from [gnome extensions](https://extensions.gnome.org/), follow instructions there to setup gnome extensions.  
 After installing gTile run:
