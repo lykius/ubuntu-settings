@@ -37,6 +37,12 @@ workon(){
     source ~/dev/$1/.venv/bin/activate
     cd ~/dev/$1
 }
+_workon_completions()
+{
+    dirs=$(find ~/dev -maxdepth 2 -type d | awk -F "dev/" '{print $2}')
+    COMPREPLY=($(compgen -W "$dirs" "${COMP_WORDS[1]}"))
+}
+complete -F _workon_completions workon
 alias deact='deactivate'
 alias cdpj='cd $(which python | cut -d. -f1)'
 
