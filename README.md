@@ -43,6 +43,12 @@ Open `vim` and run `:PluginInstall` to install plugins.
 ## pyenv
 Follow instructions [here](https://github.com/pyenv/pyenv#basic-github-checkout) and [here](https://github.com/pyenv/pyenv/wiki#suggested-build-environment).
 
+## pdm
+Follow instructions [here](https://pdm.fming.dev/latest/#installation).  
+Run `echo export PATH=/home/lykius/.local/bin:$PATH >> .bashrc`.  
+Restart bash.  
+Run `pdm config venv.with_pip True`.
+
 ## poetry
 Follow instructions [here](https://python-poetry.org/docs/#installation).  
 You need to logout and then login to add poetry to the PATH.  
