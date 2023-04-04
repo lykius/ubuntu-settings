@@ -11,6 +11,13 @@ wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/kon
 ``` 
 Set the default terminal application with the command `sudo update-alternatives --config x-terminal-emulator`.
 
+## tmux
+Enable correct colors inside tmux, by creating the file `~/.tmux.conf`:
+```
+set-option -g  default-terminal "xterm-256color" 
+set-option -ga terminal-overrides ",xterm-256color:Tc"
+```
+
 ## /etc/fstab
 Generally, add the following line to `/etc/fstab` to mount automatically a partition:
 ```
