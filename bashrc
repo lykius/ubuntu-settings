@@ -19,7 +19,7 @@ current_venv_and_branch() {
     fi
 }
 
-export PS1="\n\[\033[38;5;141m\]\u@\h\[$(tput sgr0)\]:\[\033[38;5;6m\]\w\[$(tput sgr0)\]\n\$(current_venv_and_branch)\[\033[38;5;124m\]\\$\[$(tput sgr0)\] "
+export PS1="\n\[\033[38;5;141m\]\u@\h\[$(tput sgr0)\]:\[\033[38;5;6m\]\w\[$(tput sgr0)\]\n\$(current_venv_and_branch)\[\033[38;5;196m\]\\$\[$(tput sgr0)\] "
 
 alias ls='ls --color'
 export LS_COLORS='di=1;93:ln=4:ex=92'
