@@ -3,10 +3,10 @@ ColorScheme=lykius
 Font=Ubuntu Mono,14,-1,5,50,0,0,0,0,0
 
 [General]
-LocalTabTitleFormat=(%u) %h
+LocalTabTitleFormat=%u@%h
 Name=lykius
 Parent=FALLBACK/
-RemoteTabTitleFormat=(%u) %H
+RemoteTabTitleFormat=%u@%H
 ShowTerminalSizeHint=false
 
 [Scrolling]
