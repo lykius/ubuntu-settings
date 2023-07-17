@@ -46,8 +46,6 @@ complete -F _workon_completions workon
 alias deact='deactivate'
 alias cdpj='cd $(which python | cut -d. -f1)'
 
-# alias jnote='jupyter-notebook'
-# alias arpscan='sudo arp-scan --interface=INTERFACE --localnet'
 # sshfs() { sshfs USER@HOST:/remote/path /local/path ; }
 # alias nsmi='watch nvidia-smi'
 # cuda() { export CUDA_VISIBLE_DEVICES="$1" ; }
@@ -55,9 +53,10 @@ alias cdpj='cd $(which python | cut -d. -f1)'
 # alias tmuxn='tmux new -s'
 # alias tmuxa='tmux a -t'
 # alias chm='sudo chmod -R ugo-rwx,u+rwX,go+rX'
-# alias docker_killall='docker stop `docker ps -a -q` && docker rm `docker ps -a -q`'
-# alias docker_rmall='docker rmi `docker image ls -q`'
-# alias img2vid='ffmpeg -framerate 10 -start_number 0 -i images/%06d.png -c:v libx264 video.mp4'
-# alias genpalette='ffmpeg -i video.mp4 -vf "fps=10,palettegen" palette.png'
-# alias vid2gif='ffmpeg -i video.mp4 -i palette.png -filter_complex "fps=10,paletteuse" scene.gif'
 # cheat() { curl cheat.sh/$1 ; }
+
+export-cuda()
+{
+    echo export PATH=/usr/local/cuda-$1/bin'${PATH:+:${PATH}}' ;
+    echo export LD_LIBRARY_PATH=/usr/local/cuda-$1/lib64'${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' ;
+}
