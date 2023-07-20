@@ -49,11 +49,16 @@ alias cdpj='cd $(which python | cut -d. -f1)'
 # sshfs() { sshfs USER@HOST:/remote/path /local/path ; }
 # alias nsmi='watch nvidia-smi'
 # cuda() { export CUDA_VISIBLE_DEVICES="$1" ; }
-# alias tboard='tensorboard --logdir . --host 137.204.59.222'
+# alias tboard='tensorboard --logdir . --host localhost'
 # alias tmuxn='tmux new -s'
 # alias tmuxa='tmux a -t'
 # alias chm='sudo chmod -R ugo-rwx,u+rwX,go+rX'
 # cheat() { curl cheat.sh/$1 ; }
+
+# tunnel-ssh()
+# {
+#    ssh USER@HOST -L [LOCAL_IP:]LOCAL_PORT:REMOTE_IP:REMOTE_PORT ;
+# }
 
 export-cuda()
 {
