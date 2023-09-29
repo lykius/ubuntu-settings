@@ -33,6 +33,11 @@ alias pip='pip3'
 
 export PIP_REQUIRE_VIRTUALENV=true
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+mkvenv() {
+    py -m venv .venv ;
+    source .venv/bin/activate ;
+    pip install -U pip setuptools wheel ;
+}
 workon(){
     source ~/dev/$1/.venv/bin/activate
     cd ~/dev/$1
