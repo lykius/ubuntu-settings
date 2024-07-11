@@ -61,6 +61,12 @@ Follow instructions [here](https://python-poetry.org/docs/#installation).
 You need to logout and then login to add poetry to the PATH.  
 After that, run `poetry config virtualenvs.in-project true`.
 
+## git autocompletion
+```
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+echo ". ~/git-completion.bash" >> ~/.bashrc
+```
+
 ## NVIDIA Drivers and CUDA
 ### Drivers
 Add drivers repository with `sudo add-apt-repository ppa:graphics-drivers/ppa` and `sudo apt update` (sometimes a reboot was required).  
