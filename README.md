@@ -63,8 +63,8 @@ After that, run `poetry config virtualenvs.in-project true`.
 
 ## git autocompletion
 ```
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-echo ". ~/git-completion.bash" >> ~/.bashrc
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O ~/.git-completion.bash
+echo ". ~/.git-completion.bash" >> ~/.bashrc
 ```
 
 ## NVIDIA Drivers and CUDA
