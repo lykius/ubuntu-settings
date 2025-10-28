@@ -1,7 +1,7 @@
 # Ubuntu settings
 
 ## konsole
-Install from software center and run:
+Install from software center (apt version, NOT snap) and run:
 ```
 mkdir -p ~/.local/share/konsole && cd ~/.local/share/konsole
 wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/lykius.profile
@@ -10,6 +10,8 @@ cd ~/.config
 wget https://raw.githubusercontent.com/lykius/ubuntu-settings/master/konsole/konsolerc
 ``` 
 Set the default terminal application with the command `sudo update-alternatives --config x-terminal-emulator`.
+
+To remove the toolbars: Right click -> Disable "Lock Toolbar Positions" -> Right click -> "Toolbars Shown" -> Disable all.
 
 ## tmux
 Enable correct colors inside tmux, by creating the file `~/.tmux.conf`:
