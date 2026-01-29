@@ -1,5 +1,18 @@
 # Ubuntu settings
 
+## terminator
+Follow install instructions from [here](https://github.com/gnome-terminator/terminator/blob/master/INSTALL.md).  
+Set terminator as default terminal application:
+```
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/terminator 1
+sudo update-alternatives --config x-terminal-emulator
+```
+Download config file:
+```
+mkdir -p ~/.config/terminator
+wget https://raw.githubusercontent.com/lykius/ubuntu-settings/refs/heads/master/terminator.config -O ~/.config/terminator/config
+```
+
 ## konsole
 Install from software center (apt version, NOT snap) and run:
 ```
